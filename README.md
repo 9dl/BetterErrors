@@ -23,20 +23,21 @@ go get -u github.com/9dl/BetterErrors
 ```go
 package main
 
+var logger = BetterErrors.NewErrorLogger()
+
 import (
 	"errors"
 	"github.com/9dl/BetterErrors"
 )
 
 func main() {
-	err := someFunction()
-	BetterErrors.LogError(err)
-
+	logger.SetIncludeSensitiveInfo(true)
+	someFunction()
 	// ... rest of your code ...
 }
 
-func someFunction() error {
-	return errors.New("something went wrong")
+func someFunction()  {
+	logger.LogError(errors.New("Hello!"))
 }
 ```
 ![](/image.png)
