@@ -39,6 +39,7 @@ func someFunction() error {
 	return errors.New("something went wrong")
 }
 ```
+![](/image.png)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
