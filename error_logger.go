@@ -55,6 +55,6 @@ func (logger *ErrorLogger) LogError(err error) {
 		}
 		fmt.Println("╰───────────────────────────────────")
 
-		log.Fatalf(logger.ExitMessage)
+		//log.Fatalf(logger.ExitMessage)
 	}
 }
