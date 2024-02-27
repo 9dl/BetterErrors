@@ -2,7 +2,6 @@ package BetterErrors
 
 import (
 	"fmt"
-	"log"
 	"runtime"
 
 	"github.com/logrusorgru/aurora"
